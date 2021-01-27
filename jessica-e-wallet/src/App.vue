@@ -45,6 +45,14 @@ body {
   grid-auto-rows: 2.8rem;
   text-shadow: -1px -1px 2px hsla(0, 0%, 100%, 0.4);
 }
+.blank {
+  background: linear-gradient(
+      237.75deg,
+      hsla(0, 0%, 100%, 0.24),
+      hsla(0, 0%, 100%, 0)
+    ),
+    #d0d0d0;
+}
 .evil {
   background: linear-gradient(248.3deg, rgba(0, 0, 0, 0.16), transparent),
     #f33355;
@@ -73,14 +81,7 @@ body {
     #222;
   color: #fff;
 }
-.blank {
-  background: linear-gradient(
-      237.75deg,
-      hsla(0, 0%, 100%, 0.24),
-      hsla(0, 0%, 100%, 0)
-    ),
-    #d0d0d0;
-}
+
 .card header {
   display: -webkit-box;
   display: -ms-flexbox;

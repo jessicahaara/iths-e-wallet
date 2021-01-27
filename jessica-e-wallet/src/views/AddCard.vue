@@ -4,7 +4,7 @@
       <top v-bind:heading="heading" v-bind:cardHeading="cardHeading" />
     </header>
 
-    <card v-bind:card="card" v-bind:colorClass="colorClass"/>
+    <card v-bind:card="card" />
 
     <CardForm v-bind:card="card" />
     <router-link to="/" tag="button" v-on:click.native="addNewCard()">
@@ -39,8 +39,6 @@ export default {
         validMonth: "MM",
         validYear: "YY",
       },
-
-       colorClass: 'blank'
     };
   },
 

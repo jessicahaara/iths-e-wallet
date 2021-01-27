@@ -12,7 +12,7 @@ new Vue({
         {
           id: "432984728397",
           holder: "Jessica Haara",
-          vendor: "bitcoin",
+          vendor: "Evil Corp",
           number: "12334574536834",
           validMonth: "MM",
           validYear: "YY",
@@ -20,7 +20,7 @@ new Vue({
         {
           id: "432984728396",
           holder: "Charlie Haara",
-          vendor: "bitcoin",
+          vendor: "Bitcoin Inc",
           number: "456",
           validMonth: "MM",
           validYear: "YY",
@@ -28,7 +28,7 @@ new Vue({
         {
           id: "432984728395",
           holder: "Lukas Rosman",
-          vendor: "bitcoin",
+          vendor: "Ninja Bank",
           number: "789",
           validMonth: "05",
           validYear: "YY",

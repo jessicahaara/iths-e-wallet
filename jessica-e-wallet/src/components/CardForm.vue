@@ -39,9 +39,7 @@
     <select
       name="vendor"
       class="col-2"
-      v-model="card.vendor"
-      v-on:change="changeColor(card.vendor)"
-      
+      v-model="card.vendor"  
     >
       <option v-for="(vendor, index) in vendors" v-bind:key="index" >
         {{ vendor }}
@@ -81,12 +79,6 @@ export default {
     };
   },
 
-  methods: {
-    changeColor(vendor) {
-      this.$emit("clicked", vendor);
-      console.log(vendor)
-    },
-  },
 };
 </script>
 
