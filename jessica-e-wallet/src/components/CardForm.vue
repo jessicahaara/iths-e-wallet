@@ -76,8 +76,9 @@ export default {
         "12",
       ],
 
-      // yearNow: new Date().getFullYear(),
-      years: ["21", "22", "23", "24", "25"],
+      yearNow: new Date().getFullYear(),
+      
+      years: [],
 
       vendors: ["Bitcoin Inc", "Blockchain Inc", "Evil Corp", "Ninja Bank"],
     };
@@ -88,7 +89,19 @@ export default {
       this.$router.push("/");
       this.$root.$data.cardStack.push(this.card);
     },
+
+    getYearList: function () {
+      for (let i = 0; i < 5; i++) {
+        let shortYear = (this.yearNow + i).toString();
+        this.years.push(shortYear.substring(2))
+      }
+    },
+
   },
+
+  beforeMount() {
+    this.getYearList()
+  }
 };
 </script>
 
