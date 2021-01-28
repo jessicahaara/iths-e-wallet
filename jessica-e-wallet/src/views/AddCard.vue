@@ -7,9 +7,7 @@
     <card v-bind:card="card" />
 
     <CardForm v-bind:card="card" />
-    <router-link to="/" tag="button" v-on:click.native="addNewCard()">
-    ADD CARD
-    </router-link>
+
   </div>
 </template>
 
@@ -40,12 +38,6 @@ export default {
         validYear: "YY",
       },
     };
-  },
-
-  methods: {
-    addNewCard() {
-      this.$root.$data.cardStack.push(this.card);
-    },
   },
 
 };

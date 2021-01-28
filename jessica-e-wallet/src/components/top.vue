@@ -13,7 +13,7 @@ export default {
   
   props: {
     heading: String,
-    cardHeading: String
+    cardHeading: String,
   }
 }
 </script>

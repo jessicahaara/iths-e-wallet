@@ -10,34 +10,30 @@ new Vue({
     return {
       cardStack: [
         {
-          id: "432984728397",
           holder: "Jessica Haara",
           vendor: "Evil Corp",
-          number: "12334574536834",
-          validMonth: "MM",
-          validYear: "YY",
-        },
-        {
-          id: "432984728396",
-          holder: "Charlie Haara",
-          vendor: "Bitcoin Inc",
-          number: "456",
-          validMonth: "MM",
-          validYear: "YY",
-        },
-        {
-          id: "432984728395",
-          holder: "Lukas Rosman",
-          vendor: "Ninja Bank",
-          number: "789",
+          number: "1234567891011121",
           validMonth: "05",
-          validYear: "YY",
+          validYear: "22",
+        },
+        {
+          holder: "Jessica Haara",
+          vendor: "Bitcoin Inc",
+          number: "1891189118911891",
+          validMonth: "11",
+          validYear: "21",
+        },
+        {
+          holder: "Jessica Haara",
+          vendor: "Ninja Bank",
+          number: "1337133713371337",
+          validMonth: "03",
+          validYear: "23",
         },
       ] 
     }
   },
   render: h => h(App)
 }).$mount('#app')
-
 
 

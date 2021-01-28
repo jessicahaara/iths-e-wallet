@@ -1,8 +1,8 @@
 <template>
   <div class="home">
     <header>
-      <!-- <img alt="Vue logo" src="../assets/logo.png">  lägga till bild från assets-->
-      <top v-bind:heading="heading" v-bind:cardHeading="cardHeading" />
+      <top v-if="getCardStack.length > 0" v-bind:heading="heading" v-bind:cardHeading="cardHeading" />
+      <top v-else v-bind:heading="heading" />
     </header>
 
     <card v-if="getCardStack.length > 0" v-bind:card="getCardStack[activeCard]" />
@@ -56,7 +56,6 @@ export default {
       let confirmation = window.confirm("Are you sure?");
 
       if (confirmation === true) {
-        console.log(confirmation);
 
         this.getCardStack.splice(this.activeCard, 1);
 
@@ -69,6 +68,42 @@ export default {
 </script>
 
 <style scoped>
+
+button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 4rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-decoration: none;
+  color: #000;
+  border: 0.125rem solid #000;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 0.5rem;
+  margin: 2rem 0;
+  font-family: PT Mono, monospace;
+  cursor: pointer;
+  background: #fff;
+  width: 100%;
+}
+button:hover {
+  background: #000;
+  color: #ddd;
+}
+button:active {
+  background: #000;
+  color: #fff;
+}
+
 .delete {
   max-width: 30%;
   height: 20px;
@@ -79,4 +114,5 @@ export default {
 p {
   text-align: center;
 }
+
 </style>
